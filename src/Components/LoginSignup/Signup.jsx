@@ -1,44 +1,95 @@
-import "./Signup.css";
-import tour_set from "../Assets/tour-set-signup.svg";
+import './Signup.css'
+import { useState } from 'react';
+import tourset from '../Assets/tourSet.png'
+import fb from '../Assets/fb.png'
+import logo from '../Assets/Signuplogo.png'
+import googlebutton from '../Assets/google.png'
+import jwt_decode from 'jwt-decode';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
+import { useGoogleLogin  } from '@react-oauth/google';
 
-const Signup = (props) => {
-  return (
-    <>
-      {/* <img className="tourSet" src={tour_set} alt="tour-set" /> */}
-      <div className="container">
-        <form method="post" className="signupForm">
-          <div className="header">
-            <div className="text">Create Account</div>
-          </div>
-          <div className="inputs">
-            <div className="input">
-              <input type="text" placeholder="Full Name" />
+const LoginSignup = () => {
+
+    const [user, setUser] = useState({});
+    //google login setup
+    const login = useGoogleLogin({
+        onSuccess: codeResponse => {
+            console.log(jwt_decode(codeResponse))
+            setUser(codeResponse)
+        }
+    });
+
+    //facebook login setup
+    const responseFacebook = (response) => {                           //success
+        console.log("facebook result  " + response.credential)
+        setUser(response)
+    }
+    const handleLoginFailure = (error) => {                            //failure
+        console.log(error)
+    }
+
+    return (
+        <>
+            <img src={logo} alt='logo' className='logo'></img>
+            <img src={tourset} alt='tourset' className='tourset'></img>
+            <div className="container">
+                <form method="post" className='signupForm'>
+                    <div className="header">
+                        <div className="text">Create Account</div>
+                        <div className='customlogin'>
+                            <button type='button' onClick={() => login()} className='custombutton'>
+                            <img src={googlebutton} alt='google'></img>
+                                    <div>
+                                        Signup with Google
+                                    </div>
+                            </button>
+
+                            <div className='loginbutton'>
+                                <FacebookLogin
+                                    appId="3478666502461850"
+                                    autoLoad
+                                    fields="name, email, picture"
+                                    callback={responseFacebook}
+                                    onFailure={handleLoginFailure}
+                                    render={(renderProps) => (
+                                        <button type='button' onClick={renderProps.onClick} className='custombutton'>
+                                            <img src={fb} alt='fb'></img>
+                                            <div>Signup with Facebook</div>
+                                        </button>
+                                    )}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className='or'>
+                        -OR-
+                    </div>
+                    <div className="inputs">
+                        <div className="input">
+                            <input type="text" placeholder='Full Name' />
+                        </div>
+                        <div className="input">
+                            <input type="email" placeholder='Email Address' />
+                        </div>
+                        <div className="input">
+                            <input type="password" placeholder='Password' />
+                        </div>
+                        <div className="input">
+                            <input type="password" placeholder='Repeat Password' />
+                        </div>
+                    </div>
+                    <div className="submit-container">
+                        <button className='signupSubmit' type='submit'>Create Account</button>
+                    </div>
+                    <div className='alreadyacc'>
+                        Already have account?
+                        <a href='./Login.jsx' className='redirect'>Log in</a>
+                    </div>
+                </form>
+
             </div>
-            <div className="input">
-              <input type="email" placeholder="Email Address" />
-            </div>
-            <div className="input">
-              <input type="password" placeholder="Password" />
-            </div>
-            <div className="input">
-              <input type="password" placeholder="Repeat Password" />
-            </div>
-          </div>
-          <div className="submit-container">
-            <button className="signupSubmit" type="submit">
-              Create Account
-            </button>
-          </div>
-        </form>
-        <div className="form-switch">
-          Already have an account?
-          <button className="form-switch-btn" onClick={props.xyz("login")}>
-            Log In
-          </button>
-        </div>
-      </div>
-    </>
-  );
-};
+        </>
+    )
+}
 
 export default Signup;

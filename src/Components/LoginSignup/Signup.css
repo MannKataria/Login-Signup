@@ -5,6 +5,23 @@
 button{
   cursor: pointer;
 }
+
+.logo{
+  position: absolute;
+  top: 1vh;
+  left: 1.5vw;
+  width:185px;
+  height:auto;
+}
+
+.tourset{
+  position: absolute;
+    left: 8vw;
+    width: 50%;
+    height: auto;
+    bottom: 4vh;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -21,9 +38,6 @@ button{
   align-items: flex-start;
   background-color: transparent;
 }
-.tourSet {
-  height: 36.25rem;
-}
 .header .text {
   /* font-size: 3rem; */
   font-size: 3.2vw;
@@ -39,6 +53,7 @@ button{
   width: 23.125vw;
   /* width: 100%; */
   border: none;
+  outline: none;
   background: transparent;
   border-bottom: 0.1rem solid #b8b8b8;
 }
@@ -73,4 +88,70 @@ button{
   font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: -0.01063rem;
+  color: #FFFFFF;
+  background-color: #D05941;
+  cursor: pointer;
+}
+
+.customlogin{
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.custombutton {
+  display: flex; 
+  align-items: center; 
+  border-radius: 11px;
+  border: 1px solid #B8B8B8;
+  background: rgba(255, 255, 255, 0.75);
+  width: 251px;
+  height: 36px;
+  color: #a7a3a3;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.custombutton img {
+  margin-right: 10px; 
+}
+
+.or{
+  padding-top: 1.5rem;
+  align-self: center;
+
+  color: #6D6C6C;
+  font-family: Montserrat;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.alreadyacc{
+  display: flex;
+  font-size: 1.0625rem;
+  align-items: flex-end;
+  padding-top: 1.5rem;
+  color: #A7A3A3;
+}
+
+.redirect{
+  text-decoration: none;
+  color: #D05941;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.01063rem;
+  margin-left: 0.6rem;
+  cursor: pointer;
 }
