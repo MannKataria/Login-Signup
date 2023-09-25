@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*text*/
+.text {
+    font-size: 3.2vw;
+    letter-spacing: 0.12vw;
+    font-weight: 700;
+    color: #d05941;
+}
+
+.normaltext {
+
+    color: #656565;
+    font-size: 1em;
+}
+
+.titletext {
+    color: #d05941;
+}
+
+.mainCont {
+    display: flex;
+    background-color: #e1e1e1;
+    height: 100%;
+    width: 100%;
+}
+
+/*Login section*/
+.loginCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 52vw;
+    background: #FFFFFF;
+    border-radius: 0 5rem 5rem 0;
+}
+
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    background-color: #FFFFFF;
+    width: 45%;
+}
+
+.loginForm a {
+    color: #b8b8b8;
+    text-decoration: none;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.inputs,
+.header {
+    width: 100%;
+}
+
+.input input {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 0.3vw 0vw;
+    margin-top: 2vw;
+    border: none;
+    border-bottom: 0.1rem solid #b8b8b8;
+    outline: none;
+}
+
+::placeholder {
+    color: #b8b8b8;
+}
+
+.loginSubmit {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01125rem;
+    border: none;
+    outline: none;
+    border-radius: 0.6875rem;
+    padding: 0.5vw 0vw;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #D05941;
+}
+
+.loginCont #signupAcc {
+    text-align: center;
+    padding: 5px;
+}
+
+.signup {
+    color: #d05941;
+    text-decoration: none;
+}
+
+/*Logo section*/
+.logoCont {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 50vw;
+    padding-top: 10vh;
+}
+
+.shortlogoCont {
+    display: none;
+}
+
+
+/*Image*/
+.tourSet {
+    position: absolute;
+    left: 34vw;
+    width: 50%;
+    height: auto;
+    bottom: 5vh;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 1000px) {
+    .loginForm {
+
+        width: 70%;
+    }
+
+    .tourSet {
+        width: 60%;
+        bottom: 10vh;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .tourSet {
+        width: 60%;
+        height: auto;
+        bottom: 12vh;
+    }
+}
+
+/*Mobile View*/
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 1rem;
+    }
+
+    .mainCont {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+    }
+
+    .tourSet {
+        display: none;
+    }
+
+    .loginCont {
+
+        justify-content: flex-start;
+        width: 80%;
+        border-radius: 0;
+        height: auto;
+        border-end-start-radius: 2rem;
+        border-end-end-radius: 2rem;
+    }
+
+    .loginCont #signupAcc {
+
+        margin: 20px 0;
+
+    }
+
+    .shortlogoCont {
+        display: flex;
+        background-color: #FFFFFF;
+        width: 80%;
+        padding-top: 50px;
+        padding-left: 12%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+
+    }
+
+    .logoCont {
+        display: none;
+    }
+
+    .header div {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .shortlogoCont {
+        width: 100%;
+        padding-left: 15%;
+    }
+
+    .loginCont {
+        width: 100%;
+    }
+
+    .normaltext {
+        font-size: 0.9rem;
+    }
+
+    .input input {
+        font-size: 0.9rem;
+    }
+
+
+}
