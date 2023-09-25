@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+* {
   font-family: "Poppins";
+}
+button{
+  cursor: pointer;
 }
 .container {
   display: flex;
@@ -42,7 +45,7 @@
 ::placeholder {
   color: #b8b8b8;
 }
-.signupSubmit{
+.signupSubmit {
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -0.01125rem;
@@ -53,6 +56,21 @@
   margin-top: 3vw;
   width: 23.125vw;
   /* width: 24.5vw; */
-  color: #FFFFFF;
-  background-color: #D05941;
+  color: #ffffff;
+  background-color: #d05941;
+}
+.form-switch {
+  margin-top: 2vw;
+  color: #a7a3a3;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.01063rem;
+}
+.form-switch-btn {
+  background-color: transparent;
+  border: none;
+  color: #d05941;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.01063rem;
 }

@@ -1,7 +1,7 @@
 import './Signup.css'
 import tour_set from '../Assets/tour-set.png'
 
-const LoginSignup = () => {
+const Signup = (props) => {
     return (
         <>
         {/* <img className="tourSet" src={tour_set} alt="tour-set" /> */}
@@ -21,16 +21,20 @@ const LoginSignup = () => {
                         <input type="password" placeholder='Password'/>
                     </div>
                     <div className="input">
-                        <input type="password" placeholder='Repear Password'/>
+                        <input type="password" placeholder='Repeat Password'/>
                     </div>
                 </div>
                 <div className="submit-container">
                     <button className='signupSubmit' type='submit'>Create Account</button>
                 </div>
             </form>
+                <div className="form-switch">
+                    Already have an account?
+                    <button className='form-switch-btn' onClick={props.xyz("login")}>Log In</button>
+                </div>
         </div>
         </>
     )
 }
 
-export default LoginSignup
+export default Signup
