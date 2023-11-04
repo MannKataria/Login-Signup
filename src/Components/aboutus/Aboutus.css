@@ -1,0 +1,218 @@
+
+
+
+.header {
+    display: flex;
+    min-height: 7.84 rem;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90rem;
+    
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+
+.titlepart {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    color: #046B82;
+    font-family: Montserrat;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.21094rem;
+}
+
+.imagesection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:21.625rem;
+
+    background-image: url('../Assets/aboutus/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.presenting {
+    margin-top: 5.25rem;
+
+    color: #FFF;
+    font-family: Lily Script One;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+}
+
+.aboutustext {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.34rem;
+}
+
+.togglebarwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.togglebar {
+    display: flex;
+    margin-top: -3.5rem;
+    justify-content: space-between;
+    min-width: 67.625rem;
+    min-height: 6.9375rem;
+
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ButtonWhenSelectedA {
+    background-color: #FFF;
+    border: none;
+    margin-left: 9rem;
+
+    color: #046B82;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.ButtonWhenNotSelectedA {
+    background-color: #FFF;
+    border: none;
+    margin-left: 9rem;
+
+    color: #046B82;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ButtonWhenSelectedB {
+    background-color: #FFF;
+    border: none;
+    margin-right: 9rem;
+
+    color: #046B82;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.ButtonWhenNotSelectedB {
+    background-color: #FFF;
+    border: none;
+    margin-right: 9rem;
+
+    color: #046B82;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title{
+    color: #046B82;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.aboutuspart{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 7.62rem;
+}
+
+.aboutuspart .aboutustext{
+    
+    width: 70.5rem;
+    margin-top: 1.87rem;
+    
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px; 
+}
+
+.ourteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 7.62rem;
+}
+
+.profilespart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.profilecard {
+    display: flex;
+    flex-direction: column;
+    width: 17.1875rem;
+    height: 21.25rem;
+    flex-shrink: 0;
+
+    padding: 2rem;
+
+    align-items: center;
+
+    border-radius: 2.25rem;
+    border: 1px solid #DDD;
+}
+
+.profilecard .nametext {
+    margin-top: 0.5rem;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.profilecard .idtext {
+    color: #939393;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

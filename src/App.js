@@ -1,4 +1,5 @@
 import "./App.css";
+import Aboutus from "./Components/aboutus/Aboutus";
 import Main from "./Components/Main/Main";
 import Signup from "./Components/LoginSignup/Signup";
 import Login from "./Components/LoginSignup/Login";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/aboutus" element={<Aboutus />} />
         </Routes>
       </BrowserRouter>
     </div>

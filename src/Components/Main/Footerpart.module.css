@@ -1,0 +1,305 @@
+
+.container {
+    margin-top: 30rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.25rem;
+    background-color: #bad6de;
+  }
+  
+  .logo {
+    background: url('../Assets/main/Vector.svg');
+    width: 5rem;
+    height: 5.46875rem;
+  }
+  
+  
+  .text1 {
+    width: 26.5rem;
+  
+    color: #000;
+    font-family: Arial;
+    font-size: 2.89306rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.125rem; 
+  }
+  
+  .text2 {
+    width: 27rem;
+  
+    display: flex;
+    padding: 1.31rem 2.1875rem 1.31rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    color: #000;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+  
+  }
+  
+  .pillbutton {
+    display: flex;
+    padding: 0.625rem 0.97813rem 0.625rem 0.99063rem;
+    align-items: flex-start;
+    align-self: stretch;
+    cursor: pointer;
+  
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 0.92188rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+  
+    border-radius: 1.3125rem;
+    border: 1px solid #000;
+    background: #000;
+  }
+  
+  
+  .newsletter {
+    display: flex;
+    width: 72%;
+    min-width: 72vw;
+    height: auto;
+    padding: 0rem 1.5rem;
+    margin-top: 4.56rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    position: relative;
+    z-index: 1;
+  
+    border-radius: 1.25rem;
+    background: #72b9cd;
+  
+    /* Cards Shadow */
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  }
+  
+  .newslettertext {
+    display: flex;
+    width: 50%;
+    padding: 1.5rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap:1rem;
+  }
+  
+  .subscribetext {
+    width: 22.75vmax;
+    color: var(--Blackish-Green, #121);
+    font-family: Poppins;
+    font-size: 2.75vmax;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.375vmax;
+}
+
+.quotetext {
+    color: var(--Blackish-Green, #121);
+    font-family: Poppins;
+    font-style: normal;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.quotetext .title{
+    font-size: 1.25vmax;
+    font-weight: 700;
+}
+
+.quotetext .subtext{
+    font-size: 1vmax;
+    font-weight: 500;
+}
+
+.emailinputblock {
+    display: flex;
+    flex-direction: row;
+    gap: 1vmax;
+}
+
+.inputfield {
+    display: flex;
+    width: 27.8765vw;
+    padding: 0.5vmax 0vmax 0.5vmax 1vmax;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.25vmax 0.25vmax 0vmax 0vmax;
+    border: none;
+    color: #1C1B1F;
+    font-family: Poppins;
+    font-size: 1vmax;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputfield::placeholder{
+    color: #1C1B1F;
+    font-family: Poppins;
+    font-size: 1vmax;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputbutton {
+    display: flex;
+    padding: 0.5vmax 1vmax;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25vmax;
+    flex: 1 0 0;
+    align-self: stretch;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25vmax;
+    background: #046B82;
+    color: var(--Neutrals, #FFF);
+    font-family: Poppins;
+    font-size: 1.25vmax;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+  .mailboxpic {
+    display: flex;
+    width: 30vmax;
+    height: auto;
+  }
+  
+  .footer {
+    background: #bad6de;
+  
+    position: relative;
+    z-index: 0;
+  
+    margin-top:15rem;
+    display: flex;
+    width: auto;
+    max-height: 26.375rem;
+    padding: 2rem 6.5rem 4rem 6.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+    flex-shrink: 0;
+  }
+  
+  .aboutus {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 72rem;
+  }
+  
+  .footerroutier {
+    color: #046B82;
+    font-family: Montserrat;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.21094rem;
+  }
+  
+  .footerlogoblock {
+    width: 18.3vmax;
+    gap: 0.9375vmax;
+}
+  
+  .icons {
+    margin-top: 0.94rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.0625rem;
+    flex-direction: row;
+  }
+  
+  .footertextblockcover {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 2.25rem;
+    flex: 1 0 0;
+  }
+  
+  .footertextblock {
+    width: 12.92rem;
+  }
+  
+  .footertexttitle {
+    color: var(--Blackish-Green, #121);
+    font-family: Poppins;
+    font-size: 1.2vmax;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1vmax;
+}
+
+.footernormaltext {
+    color: var(--Blackish-Green, #121);
+    font-family: Poppins;
+    font-size: 1vmax;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+    margin-bottom: 0.75vmax;
+}
+
+
+@media (max-width:780px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tourists {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutus {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .mailboxpic {
+    display: none;
+  }
+
+  .footertextblockcover {
+    flex-wrap: wrap;
+  }
+
+  .footertextblock
+  {
+    max-width: 30%;
+  }
+
+  .newsletter {
+    flex-wrap: wrap;
+  }
+  
+}
