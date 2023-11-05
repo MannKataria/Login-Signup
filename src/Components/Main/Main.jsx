@@ -9,8 +9,7 @@ import fb from '../Assets/main/fb.png';
 import x from '../Assets/main/x.png';
 import yt from '../Assets/main/yt.png';
 import insta from '../Assets/main/insta.png';
-import mailbox from '../Assets/main/mailbox.png';
-import { Link } from "react-router-dom";
+import newsletterpic from '../Assets/newsletterpic.png';
 
 const Main = () => {
   return (
@@ -53,47 +52,27 @@ const Main = () => {
         <div className={styles2.leftpart}>
           <img src = {logoimg} alt='logo' className={styles2.logo}></img>
           <div className={styles2.text1}>
-            See what is our clients say about us
+            Want to know about,Routier?
           </div>
-          <div className={styles2.text2}>
-            Our top 1% of places, stays, eats, and experiences—decided by you.
-          </div>
-          <button className={styles2.pillbutton}>
-            See the winners
+          <button className={styles2.pillbutton}  onClick={''}>
+            About us
           </button>
         </div>
         <div>
           <img src = {tourists} alt = "tourists" className={styles2.tourists}></img>
         </div>
-      </div>
-
-      
+      </div>  
 
     <div className={styles2.footer}>
-
-      
-      <div className={styles2.newsletter}>
-        <div className={styles2.newslettertext}>
-          <div className={styles2.subscribetext}>Subscribe Newsletter</div>
-          
-          <div className={styles2.quotetext}>
-            <div className={styles2.title}>The Travel</div>
-            <div className={styles2.subtext}>Get inspired! Receive travel discounts, tips and behind the scenes stories.</div>
-          </div>
-
-          <div className={styles2.emailinputblock}>
-            <input className={styles2.inputfield} placeholder='Your email address'></input>
-            <button className={styles2.inputbutton}>Subscribe</button>
-          </div>
+        <div className={styles2.newsletter}>
+          <img src={newsletterpic} alt='newsletter'></img>
         </div>
-        <img src={mailbox} alt='mailbox' className={styles2.mailboxpic}></img>
-      </div>
-
-
+        
+        
         <div className={styles2.aboutus}>
           
           <div className={styles2.footerlogoblock}>
-            <img src= {footerlogo} alt ="logo"></img>
+            <img src= {footerlogo} alt ="logo" className={styles2.footerlogopic}></img>
             <div className={styles2.footerroutier}>Routier</div>
             <div className={styles2.icons}>
               <img src={fb} alt='fb'></img>
@@ -111,19 +90,10 @@ const Main = () => {
               </div>
 
               <div className={styles2.footertextblock}>
-                <div className={styles2.footertexttitle}>Our Activities</div>
-                <div className={styles2.footernormaltext}>Northern Lights</div>
-                <div className={styles2.footernormaltext}>Cruising & sailing</div>
-                <div className={styles2.footernormaltext}>Multi-activities</div>
-                <div className={styles2.footernormaltext}>Kayaing</div>
-              </div>
-
-              <div className={styles2.footertextblock}>
                 <div className={styles2.footertexttitle}>Travel Blogs</div>
                 <div className={styles2.footernormaltext}>Bali Travel Guide</div>
                 <div className={styles2.footernormaltext}>Sri Lanks Travel Guide</div>
                 <div className={styles2.footernormaltext}>Peru Travel Guide</div>
-                <div className={styles2.footernormaltext}>Bali Travel Guide</div>
               </div>
 
               <div className={styles2.footertextblock}>

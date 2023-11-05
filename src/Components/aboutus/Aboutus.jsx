@@ -5,7 +5,7 @@ import fb from '../Assets/main/fb.png';
 import x from '../Assets/main/x.png';
 import yt from '../Assets/main/yt.png';
 import insta from '../Assets/main/insta.png';
-import mailbox from '../Assets/main/mailbox.png';
+import newsletterpic from '../Assets/newsletterpic.png';
 import headerlogo from '../Assets/aboutus/headerlogo.png';
 import profile from '../Assets/aboutus/profile.png';
 import { useState } from 'react';
@@ -52,62 +52,62 @@ const OurTeamsection = () => {
 
             <div className='profilespart'>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Anuj Contractor</div>
                     <div className='idtext'>202101110</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile'className='profilepic'></img>
                     <div className='nametext'>Dharmin Patel</div>
                     <div className='idtext'>202101147</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile'className='profilepic'></img>
                     <div className='nametext'>Bansri Patel</div>
                     <div className='idtext'>202101097</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Shwet Patel</div>
                     <div className='idtext'>202101109</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Het Patel</div>
                     <div className='idtext'>202101162</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Mann Kataria</div>
                     <div className='idtext'>202101114</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Aditya Makawana</div>
                     <div className='idtext'>202101165</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Priyanshu Gagia</div>
                     <div className='idtext'>202101165</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Poojan Shah</div>
                     <div className='idtext'>202101132</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Harsh Mungara</div>
                     <div className='idtext'>202101130</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Visvas solanki</div>
                     <div className='idtext'>202101138</div>
                 </div>
                 <div className='profilecard'>
-                    <img src={profile} alt='profile'></img>
+                    <img src={profile} alt='profile' className='profilepic'></img>
                     <div className='nametext'>Meet Panchal</div>
                     <div className='idtext'>Mentor</div>
                 </div>
@@ -128,10 +128,10 @@ function Aboutus() {
         <>
         <div className='header'>
             <div className='titlepart'>
-                <img src={headerlogo} alt='logo'></img>
+                <img src={headerlogo} alt='logo' className='headerlogo'></img>
                 <div className='text'>routier</div>
             </div>
-            <a href='./'>go back to home page</a>
+            <a href='./' className='redirecttext'>go back to home page</a>
         </div>
 
 
@@ -158,30 +158,20 @@ function Aboutus() {
         {selectedOption === 'aboutUs' ? <AboutUssection /> : <OurTeamsection />}
 
     
-    <div className={styles2.footer}>
+        <div className='footerforaboutus'>
+
+        <div className={styles2.footer}>
         <div className={styles2.newsletter}>
-            <div className={styles2.newslettertext}>
-            <div className={styles2.subscribetext}>Subscribe Newsletter</div>
-            
-            <div className={styles2.quotetext}>
-                <div className={styles2.title}>The Travel</div>
-                <div className={styles2.subtext}>Get inspired! Receive travel discounts, tips and behind the scenes stories.</div>
-            </div>
-
-            <div className={styles2.emailinputblock}>
-                <input className={styles2.inputfield} placeholder='Your email address'></input>
-                <button className={styles2.inputbutton}>Subscribe</button>
-            </div>
-            </div>
-            <img src={mailbox} alt='mailbox'></img>
+          <img src={newsletterpic} alt='newsletter'></img>
         </div>
-
-
+        
+        
         <div className={styles2.aboutus}>
-            
-            <div className={styles2.footerlogoblock}>
-                <img src= {footerlogo} alt ="logo"></img>
-                <div className={styles2.footerroutier}>routier</div>
+          
+          <div className={styles2.footerlogoblock}>
+            <img src= {footerlogo} alt ="logo" className={styles2.footerlogopic}></img>
+            <div>
+                <div className={styles2.footerroutier}>Routier</div>
                 <div className={styles2.icons}>
                 <img src={fb} alt='fb'></img>
                 <img src={x} alt='x'></img>
@@ -189,38 +179,31 @@ function Aboutus() {
                 <img src={insta} alt='insta'></img>
                 </div>
             </div>
+          </div>
 
-            <div className={styles2.footertextblockcover}>
-                <div className={styles2.footertextblock}>
-                    <div className={styles2.footertexttitle}>About us</div>
-                    <div className={styles2.footernormaltext}>What is Routier?</div>
-                    <div className={styles2.footernormaltext}>How it works?</div>
-                </div>
+          <div className={styles2.footertextblockcover}>
+              <div className={styles2.footertextblock}>
+                <div className={styles2.footertexttitle}>About us</div>
+                <div className={styles2.footernormaltext}>What is Routier?</div>
+                <div className={styles2.footernormaltext}>How it works?</div>
+              </div>
 
-                <div className={styles2.footertextblock}>
-                    <div className={styles2.footertexttitle}>Our Activities</div>
-                    <div className={styles2.footernormaltext}>Northern Lights</div>
-                    <div className={styles2.footernormaltext}>Cruising & sailing</div>
-                    <div className={styles2.footernormaltext}>Multi-activities</div>
-                    <div className={styles2.footernormaltext}>Kayaing</div>
-                </div>
+              <div className={styles2.footertextblock}>
+                <div className={styles2.footertexttitle}>Travel Blogs</div>
+                <div className={styles2.footernormaltext}>Bali Travel Guide</div>
+                <div className={styles2.footernormaltext}>Sri Lanks Travel Guide</div>
+                <div className={styles2.footernormaltext}>Peru Travel Guide</div>
+              </div>
 
-                <div className={styles2.footertextblock}>
-                    <div className={styles2.footertexttitle}>Travel Blogs</div>
-                    <div className={styles2.footernormaltext}>Bali Travel Guide</div>
-                    <div className={styles2.footernormaltext}>Sri Lanks Travel Guide</div>
-                    <div className={styles2.footernormaltext}>Peru Travel Guide</div>
-                    <div className={styles2.footernormaltext}>Bali Travel Guide</div>
-                </div>
-
-                <div className={styles2.footertextblock}>
-                    <div className={styles2.footertexttitle}>Contact us</div>
-                    <div className={styles2.footernormaltext}>Our Story</div>
-                    <div className={styles2.footernormaltext}>Work with us</div>
-                    <div className={styles2.footernormaltext}>Want to be Collaborator?</div>
-                </div>
-                </div>
+              <div className={styles2.footertextblock}>
+                <div className={styles2.footertexttitle}>Contact us</div>
+                <div className={styles2.footernormaltext}>Our Story</div>
+                <div className={styles2.footernormaltext}>Work with us</div>
+                <div className={styles2.footernormaltext}>Want to be Collaborator?</div>
+              </div>
             </div>
+        </div>
+      </div>
         </div>
         </>
     );
