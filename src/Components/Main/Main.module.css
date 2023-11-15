@@ -286,10 +286,6 @@ button {
   }
 }
 @media (max-width: 600px) {
-  .navlinksCont,
-  .navlinksCont2 {
-    display: none;
-  }
   .menuIcon,
   .closeIcon {
     display: block;
@@ -313,6 +309,10 @@ button {
     height: 100vh;
     /* background-color: #046b82c1; */
     background-color: rgba(103, 103, 103, 0.85);
+  }
+  .navlinksCont,
+  .navlinksCont2 {
+    display: none;
   }
   .navlinksCont2 .reviews,
   .navlinksCont2 .alerts,

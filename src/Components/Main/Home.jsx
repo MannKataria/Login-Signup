@@ -57,7 +57,7 @@ const Home = () => {
             <img src={trip} className={styles.icons} />
             Trips
           </Link>
-          <Link className={styles.profileCont}>
+          <Link to="/profile" className={styles.profileCont}>
             <img src={profile} className={styles.profileIcon}/>
           </Link>
         </div>
